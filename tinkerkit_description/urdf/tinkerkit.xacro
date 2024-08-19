@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<robot name="tinkerkit" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+  <link name="world"/>
+  <link name="base_link">
+        <inertial>
+          <origin xyz="-8.815968575877116e-11 -8.373690091943536e-06 -0.0020457767656326385" rpy="0 0 0"/>
+          <mass value="0.26151625122186467"/>
+          <inertia ixx="0.000211" iyy="0.000211" izz="0.00042" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+        </inertial>
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="orange"/>
+        </visual>
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="shoulder_link">
+        <inertial>
+          <origin xyz="-0.006612279775624162 0.0009286319656992241 0.03435507691537748" rpy="0 0 0"/>
+          <mass value="1.4336400409360666"/>
+          <inertia ixx="0.001446" iyy="0.002382" izz="0.002442" ixy="-1.4e-05" iyz="4.7e-05" ixz="0.000167"/>
+        </inertial>
+        <visual>
+          <origin xyz="-0.0 0.0 -0.0045" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/shoulder_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="orange"/>
+        </visual>
+        <collision>
+          <origin xyz="-0.0 0.0 -0.0045" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/shoulder_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="elbow_link">
+        <inertial>
+          <origin xyz="0.031014922226379638 5.8966344082598925e-08 0.07988854538398496" rpy="0 0 0"/>
+          <mass value="0.6371891032747334"/>
+          <inertia ixx="0.001415" iyy="0.001508" izz="0.000237" ixy="0.0" iyz="0.0" ixz="-3.7e-05"/>
+        </inertial>
+        <visual>
+          <origin xyz="0.03005 0.0005 -0.06705" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/elbow_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="orange"/>
+        </visual>
+        <collision>
+          <origin xyz="0.03005 0.0005 -0.06705" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/elbow_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="arm_link">
+        <inertial>
+          <origin xyz="-0.023372645391427256 5.89663440894294e-08 0.07988854538398499" rpy="0 0 0"/>
+          <mass value="0.6371891032747333"/>
+          <inertia ixx="0.001415" iyy="0.001505" izz="0.000235" ixy="0.0" iyz="0.0" ixz="-6e-06"/>
+        </inertial>
+        <visual>
+          <origin xyz="-0.0249 0.0005 -0.19155" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/arm_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="orange"/>
+        </visual>
+        <collision>
+          <origin xyz="-0.0249 0.0005 -0.19155" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/arm_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="wrist_link">
+        <inertial>
+          <origin xyz="-0.023767157805537904 0.0021176104245903557 0.034630748217441" rpy="0 0 0"/>
+          <mass value="0.3172253432137595"/>
+          <inertia ixx="0.000205" iyy="0.000283" izz="0.000157" ixy="0.0" iyz="-8e-06" ixz="7e-06"/>
+        </inertial>
+        <visual>
+          <origin xyz="-0.02485 0.0005 -0.31605" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/wrist_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="orange"/>
+        </visual>
+        <collision>
+          <origin xyz="-0.02485 0.0005 -0.31605" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/wrist_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="hand_link">
+        <inertial>
+          <origin xyz="0.007019943319143186 -0.0018338333814194177 0.02416928417282649" rpy="0 0 0"/>
+          <mass value="0.22377606788964716"/>
+          <inertia ixx="5.7e-05" iyy="8.6e-05" izz="6.4e-05" ixy="7e-06" iyz="1e-06" ixz="-5e-06"/>
+        </inertial>
+        <visual>
+          <origin xyz="-0.0006 0.0027 -0.377" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/hand_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="amber"/>
+        </visual>
+        <collision>
+          <origin xyz="-0.0006 0.0027 -0.377" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/hand_link.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="right_gripper">
+        <inertial>
+          <origin xyz="-0.005439407698862081 -0.0008925611032257978 0.03446048218916753" rpy="0 0 0"/>
+          <mass value="0.05351412988548039"/>
+          <inertia ixx="3.8e-05" iyy="4.3e-05" izz="5e-06" ixy="-0.0" iyz="2e-06" ixz="-1e-06"/>
+        </inertial>
+        <visual>
+          <origin xyz="0.01145 -0.0059 -0.411" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/right_gripper.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="amber"/>
+        </visual>
+        <collision>
+          <origin xyz="0.01145 -0.0059 -0.411" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/right_gripper.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      
+      <link name="left_gripper">
+        <inertial>
+          <origin xyz="0.005593296891977666 -0.0006518904377838686 0.033557124123334836" rpy="0 0 0"/>
+          <mass value="0.05512717338130934"/>
+          <inertia ixx="4e-05" iyy="4.4e-05" izz="6e-06" ixy="1e-06" iyz="3e-06" ixz="0.0"/>
+        </inertial>
+        <visual>
+          <origin xyz="-0.0126 -0.00695 -0.4109" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/left_gripper.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+          <material name="amber"/>
+        </visual>
+        <collision>
+          <origin xyz="-0.0126 -0.00695 -0.4109" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="file://$(find tinkerkit_description)/meshes/left_gripper.stl" scale="0.001 0.001 0.001"/>
+          </geometry>
+        </collision>
+      </link>
+      <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </joint> 
+      
+      <joint name="base_joint" type="revolute">
+        <origin xyz="0.0 0.0 0.0045" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="shoulder_link"/>
+        <axis xyz="0.0 -0.0 1.0"/>
+        <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+      </joint>
+      
+      <joint name="shoulder_joint" type="revolute">
+        <origin xyz="-0.03005 -0.0005 0.06255" rpy="0 0 0"/>
+        <parent link="shoulder_link"/>
+        <child link="elbow_link"/>
+        <axis xyz="1.0 0.0 -0.0"/>
+        <limit upper="1.22173" lower="-1.22173" effort="100" velocity="100"/>
+      </joint>
+      
+      <joint name="elbow_joint" type="revolute">
+        <origin xyz="0.05495 0.0 0.1245" rpy="0 0 0"/>
+        <parent link="elbow_link"/>
+        <child link="arm_link"/>
+        <axis xyz="1.0 0.0 -0.0"/>
+        <limit upper="1.745329" lower="-1.745329" effort="100" velocity="100"/>
+      </joint>
+      
+      <joint name="wrist_joint" type="revolute">
+        <origin xyz="-5e-05 0.0 0.1245" rpy="0 0 0"/>
+        <parent link="arm_link"/>
+        <child link="wrist_link"/>
+        <axis xyz="1.0 0.0 -0.0"/>
+        <limit upper="1.919862" lower="-1.919862" effort="100" velocity="100"/>
+      </joint>
+      
+      <joint name="hand_joint" type="revolute">
+        <origin xyz="-0.02425 -0.0022 0.06095" rpy="0 0 0"/>
+        <parent link="wrist_link"/>
+        <child link="hand_link"/>
+        <axis xyz="-0.0 0.0 1.0"/>
+        <limit upper="6.283185" lower="0.0" effort="100" velocity="100"/>
+      </joint>
+      
+      <joint name="right_gripper_joint" type="revolute">
+        <origin xyz="-0.01205 0.0086 0.034" rpy="0 0 0"/>
+        <parent link="hand_link"/>
+        <child link="right_gripper"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit upper="0.872665" lower="0.017453" effort="100" velocity="100"/>
+        <mimic joint="left_gripper_joint" />
+      </joint>
+      
+      <joint name="left_gripper_joint" type="revolute">
+        <origin xyz="0.012 0.00965 0.0339" rpy="0 0 0"/>
+        <parent link="hand_link"/>
+        <child link="left_gripper"/>
+        <axis xyz="0.0 -1.0 0.0"/>
+        <limit upper="-0.017453" lower="-0.872665" effort="100" velocity="100"/>
+      </joint>
+      
+      <material name="silver">
+        <color rgba="0.700 0.700 0.700 1.000"/>
+      </material>
+      <material name="orange">
+        <color rgba="1.00 0.44 0.0 1" />
+     </material>
+     <material name="amber">
+        <color rgba="1.00 0.88 0.7 1" />
+     </material>
+      
+      </robot>
+      

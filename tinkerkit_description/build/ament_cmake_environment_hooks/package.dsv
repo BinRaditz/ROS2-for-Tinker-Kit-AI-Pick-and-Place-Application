@@ -1,0 +1,4 @@
+source;share/tinkerkit_description/local_setup.bash
+source;share/tinkerkit_description/local_setup.dsv
+source;share/tinkerkit_description/local_setup.sh
+source;share/tinkerkit_description/local_setup.zsh

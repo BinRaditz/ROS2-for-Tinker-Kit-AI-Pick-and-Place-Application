@@ -1,0 +1,9 @@
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/uninstall.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/tinkerkit_description_uninstall.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/test.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/edit_cache.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/rebuild_cache.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/list_install_components.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/install.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/install/local.dir
+/home/binn/robot_ws/tinkerkit/src/tinkerkit_description/build/CMakeFiles/install/strip.dir
