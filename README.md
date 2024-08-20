@@ -9,3 +9,12 @@ ROS2 Humble <br>
 # Installation
 # ROS2 HUMBLE
 Follow This Struction https://docs.ros.org/en/humble/Installation.html <br>
+
+
+#HOW TO USED
+First Terminal
+  ros2  launch tinkerkit_description gazebo.launch.py
+Second Terminal
+  ros2 launch tinkerkit_controller controller.launch.py
+Third Terminal
+  ros2 launch tinkerkit_moveit moveit.launch.py
