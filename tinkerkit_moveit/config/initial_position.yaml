@@ -1,0 +1,7 @@
+initial_posintion:
+  base_joint      : 0  
+  shoulder_joint  : 0
+  elbow_joint     : 0
+  arm_joint     : 0
+  wrist_joint     : 0
+  hand_joint      : 0
