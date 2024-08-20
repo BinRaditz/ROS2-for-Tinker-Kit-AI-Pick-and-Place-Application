@@ -12,9 +12,9 @@ Follow This Struction https://docs.ros.org/en/humble/Installation.html <br>
 
 
 # HOW TO USED
-First Terminal
-  ros2  launch tinkerkit_description gazebo.launch.py
-Second Terminal
-  ros2 launch tinkerkit_controller controller.launch.py
-Third Terminal
-  ros2 launch tinkerkit_moveit moveit.launch.py
+First Terminal<br>
+  ros2  launch tinkerkit_description gazebo.launch.py<br>
+Second Terminal<br>
+  ros2 launch tinkerkit_controller controller.launch.py<br>
+Third Terminal<br>
+  ros2 launch tinkerkit_moveit moveit.launch.py<br>
